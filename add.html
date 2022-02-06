@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add property + </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="container">
+        <h1>Add your property for sale</h1>
+        <h3>Yes, you can sell where you live and get cash</h3>
+    </header>
+    <main class="container">
+        <p>Add property</p>
+        <form  method="post" id="propertyPost">
+            <label for="img">Photo</label>
+            <input 
+            type="url"
+            name="img"
+            id="imge"
+            placeholder="https://google.com/logo.png"
+            required>
+
+            <label for="price">Price, EUR</label>
+            <input 
+            type="number" 
+            name="price" 
+            id="price"
+            placeholder="500000"
+            required>
+        
+            <label for="description">Description</label>
+            <textarea
+            placeholder="Anything you would like to say?"
+            name="description"
+            id="description"
+            required>
+            </textarea>
+            <label for="city">City</label>
+            <select class="btn1" id="city" name="city">
+                <option value="Vilnius">Vilnius</option>
+                <option value="Kaunas">Kaunas</option>
+                <option value="Klaipėda">Klaipėda</option>
+                <option value="Šiauliai">Šiauliai</option>
+            </select>
+                <button type="submit" class="addProperty">Add property</button>
+            <p id="status"></p>
+          </form>
+          <div  class="back"> <a class="back" href="index.html"> Back to Property list</a></div>
+        
+        
+    <script src="addproperty.js"></script>
+    
+</body>
+</html>
